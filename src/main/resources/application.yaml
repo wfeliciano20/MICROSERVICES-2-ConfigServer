@@ -1,1 +1,12 @@
+server:
+  port: 9296
 
+spring:
+  application:
+    name: CONFIG-SERVER
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/wfeliciano20/MICROSERVICES-2-Spring-App-Config.git
+          clone-on-start: true
